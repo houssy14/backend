@@ -24,6 +24,9 @@ const Productbyid = () => {
       <p>Description: {product.description}</p>
       <p>Price: {product.price}</p>
       <Link to="/">Back Home</Link>
+      <br />
+      <br />
+      <input type="time"></input>
 
     </div>
   )

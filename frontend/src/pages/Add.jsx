@@ -28,6 +28,9 @@ const Add = () => {
         <input type="number" min={0} onChange={(e)=>setprice(e.target.value)}></input>
         <input type="submit"></input>
 
+    <label>Time:</label>
+    <input type="time"></input>
+
       </form>
     </div>
   )
