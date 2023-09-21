@@ -3,7 +3,7 @@ const user = require("../model/user");
 module.exports.login = async (req,res)=>{
     const { email,password } = req.body;
 
-    const theuser = await user.findOne({email,Password});
+    const theuser = await user.findOne({email,password});
 
     if (theuser !== null) {
         return res.status(200).json(theuser);
@@ -20,7 +20,7 @@ module.exports.register =(req,res) => {
         email,
         password,
     });
-
+console.log (newuser)
     newuser.save().then(
         (res)=>{
             return res.status(200).json({message:"wlecome  new user"});   
