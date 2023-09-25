@@ -27,8 +27,10 @@ const Edit = () => {
     <div>
       <form onSubmit={editproduct}>
         <label>Title:</label>
+      <br></br>
         <input type="text" value={title} onChange={(e)=>settitle(e.target.value)}></input>
         <label>Description:</label>
+        <br></br>
         <input type="text" value={description} onChange={(e)=>setdescription(e.target.value)}></input>
         <label>Price:</label>
         <input type="number" min={0} value={price} onChange={(e)=>setprice(e.target.value)}></input>

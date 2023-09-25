@@ -6,6 +6,8 @@ import Edit from "./pages/Edit";
 import Productbyid from "./pages/Productbyid";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
               <Route path="/add" element={<Add />} />
               <Route path="/edit/:id" element={<Edit />} />
               <Route path="/product/:id" element={<Productbyid />} />
+           
             </>
           
             <>
