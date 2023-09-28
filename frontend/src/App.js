@@ -25,7 +25,6 @@ function App() {
               <Route path="/product/:id" element={<Productbyid />} />
             </>
           <>
-          <Route path="/product" element={<Search />} />
 
           </>
             <>
