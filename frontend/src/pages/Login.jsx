@@ -1,15 +1,17 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Login = () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   let navigate = useNavigate();
 
-  const loginFunction = (e) => {
+  const notify  = (e) => {
     e.preventDefault();
-
+    
     axios
       .post("http://localhost:8080/auth/login", {
         email,
@@ -19,17 +21,21 @@ const Login = () => {
         console.log(res.data);
         localStorage.setItem("token", res.data);
         navigate("/");
+        toast.success('Successfully toasted!')
+
       })
       .catch((err) => {
         console.log(err.message);
-        alert("Something went wrong , Check your credentials");
+        toast.error("This didn't work.")
+        toast.success('Successfully toasted!')
+
       });
   };
 
   return (
     <div>
       <h1>Login Form</h1>
-      <form onSubmit={loginFunction}>
+      <form onSubmit={notify}>
         <div>
           <label htmlFor="email">email</label>
           <input
@@ -50,6 +56,7 @@ const Login = () => {
         </div>
         <input type="submit" />
       </form>
+      <Toaster/>
     </div>
   );
 };
