@@ -1,5 +1,5 @@
 const{Router}=require("express")
-const { getproducts, getproductsbyid, addproduct, editproduct, deleteproduct } = require("../controllers/Prodcont")
+const { getproducts, getproductsbyid, addproduct, editproduct, deleteproduct,searchproduct } = require("../controllers/Prodcont")
 const productrouter=Router()
 
 

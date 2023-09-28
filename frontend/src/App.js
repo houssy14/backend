@@ -8,6 +8,9 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 
+
+
+
 function App() {
   return (
     <div className="App">
@@ -15,13 +18,16 @@ function App() {
         <Routes>
 
             <>
+            
               <Route path="/" element={<Home />} />
               <Route path="/add" element={<Add />} />
               <Route path="/edit/:id" element={<Edit />} />
               <Route path="/product/:id" element={<Productbyid />} />
-           
             </>
-          
+          <>
+          <Route path="/product" element={<Search />} />
+
+          </>
             <>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />

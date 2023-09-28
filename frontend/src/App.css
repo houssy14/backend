@@ -18,3 +18,11 @@
 .nav {
  color: rgb(0, 0, 0);
 }
+
+img {
+  width: 200px; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  border: 2px solid #333; /* Add a border with a color */
+  border-radius: 10px; /* Add rounded corners to the border */
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}
