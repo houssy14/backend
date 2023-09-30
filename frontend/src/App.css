@@ -2,9 +2,9 @@
   text-align: center;
   color: hsl(0, 0%, 0%);
   font-weight: bold;
-    background-color: #bdbdbd;
-    color: #050000;
-    padding: 100px 190px;
+    background-color: #b9b3b3;
+    color: #1f1d1d;
+    padding: 100px 150px;
     border: none;
     border-radius: 400px;
     text-align: center;
@@ -16,13 +16,15 @@
 }
 
 .nav {
- color: rgb(0, 0, 0);
+ color: rgb(251, 247, 247);
 }
 
-img {
-  width: 200px; /* Set the width of the image */
-  height: auto; /* Maintain the aspect ratio */
-  border: 2px solid #333; /* Add a border with a color */
-  border-radius: 10px; /* Add rounded corners to the border */
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+/* styles.css */
+body {
+    background-image: url('images\ \(2\).jpg');
+
+}
+
+h1 {
+  color: blue;
 }

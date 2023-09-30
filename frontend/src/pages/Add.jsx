@@ -19,6 +19,7 @@ const Add = () => {
 }
   return (
     <div>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkkc6zV3ivXBPvHTrKbLQmXYPhEtB1u7n4eA&usqp=CAU'></img>
       <form onSubmit={addproduct}>
         <label>Title:</label>
         <input type="text" onChange={(e)=>settitle(e.target.value)}></input>

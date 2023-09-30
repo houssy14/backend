@@ -10,6 +10,10 @@ app.use(productrouter)
 app.use(authrouters)
 
 
+//routes
+const postRouters = require("./routers/post.routes.js")
+app.use(postRouters);
+
 
 
 

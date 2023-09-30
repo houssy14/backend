@@ -27,7 +27,7 @@ const Login = () => {
       .catch((err) => {
         console.log(err.message);
         toast.error("This didn't work.")
-        toast.success('Successfully toasted!')
+      
 
       });
   };

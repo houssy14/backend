@@ -6,6 +6,11 @@ import Edit from "./pages/Edit";
 import Productbyid from "./pages/Productbyid";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Search from './components/search';
+
+
+
+
 
 
 
@@ -23,8 +28,11 @@ function App() {
               <Route path="/add" element={<Add />} />
               <Route path="/edit/:id" element={<Edit />} />
               <Route path="/product/:id" element={<Productbyid />} />
+              <Route path='/search' element={<Search/>} />
+
             </>
           <>
+        
 
           </>
             <>
