@@ -34,6 +34,7 @@ const Login = () => {
 
   return (
     <div>
+      <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/67/StrangerThingslogo.png/640px-StrangerThingslogo.png"></img>
       <h1>Login Form</h1>
       <form onSubmit={notify}>
         <div>

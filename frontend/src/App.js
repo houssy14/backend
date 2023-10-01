@@ -7,6 +7,8 @@ import Productbyid from "./pages/Productbyid";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Search from './components/search';
+import Navbar from './components/Navbar';
+import News from './components/News'
 
 
 
@@ -23,12 +25,14 @@ function App() {
         <Routes>
 
             <>
-            
+            <Route path="/News" element={<News />} />
+            <Route path="/Navbar" element={<Navbar/>} />
               <Route path="/" element={<Home />} />
               <Route path="/add" element={<Add />} />
               <Route path="/edit/:id" element={<Edit />} />
               <Route path="/product/:id" element={<Productbyid />} />
               <Route path='/search' element={<Search/>} />
+         
 
             </>
           <>

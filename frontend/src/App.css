@@ -2,7 +2,7 @@
   text-align: center;
   color: hsl(0, 0%, 0%);
   font-weight: bold;
-    background-color: #b9b3b3;
+    background-color: #360cf2;
     color: #1f1d1d;
     padding: 100px 150px;
     border: none;
@@ -26,5 +26,5 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: rgb(39, 8, 8));
 }
