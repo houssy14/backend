@@ -20,8 +20,9 @@ const searchPosts = async (e) => {
 
 
   return (
+  <div>
+<Navbar/>
     <div className="search">
-      <Navbar/>
       <form onSubmit={(e) => searchPosts(e)}>
         <input
         onChange={(e) => setQuery(e.target.value)}
@@ -39,6 +40,7 @@ const searchPosts = async (e) => {
         price={post.price}
         />
       ))}
+      </div>
     </div>
   )
 }

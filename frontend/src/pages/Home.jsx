@@ -17,6 +17,7 @@ const Home = () => {
   }
   
   
+  
   return (
     <div>
       <button onClick={()=>{nav("/add")}}>Add Product</button>

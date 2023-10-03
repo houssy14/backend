@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, {useState} from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
   const [username, setusername] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
 
-  const RegisterFunction = (e) => {
+  const notify = (e) => {
     e.preventDefault();
-
     axios
       .post("http://localhost:8080/auth/register", {
         username,
@@ -20,14 +20,16 @@ const Register = () => {
       })
       .catch((err) => {
         console.log(err.message);
-        alert("Something went wrong , Check your informations");
+        toast.success('Successfully toasted!')
+
       });
   };
 
   return (
     <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXN70XPuQkewQGiUTavGbi6R7D3n7-0d8kM1n_WIXQIIRu2abA-1JANMJoel_SJrZDghM&usqp=CAU"></img>
       <h1>Register Form</h1>
-      <form onSubmit={RegisterFunction}>
+      <form onSubmit={notify}>
         <div>
           <label htmlFor="username">username</label>
           <input
@@ -57,6 +59,7 @@ const Register = () => {
         </div>
         <input type="submit" />
       </form>
+      <Toaster/>
     </div>
   );
 };

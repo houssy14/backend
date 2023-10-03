@@ -8,7 +8,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Search from './components/search';
 import Navbar from './components/Navbar';
-import News from './components/News'
+import News from './components/News';
+import About from './components/About'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Routes>
 
             <>
+            <Route path="/About" element={<About />} />
             <Route path="/News" element={<News />} />
             <Route path="/Navbar" element={<Navbar/>} />
               <Route path="/" element={<Home />} />
