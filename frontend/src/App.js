@@ -9,9 +9,8 @@ import Register from "./pages/Register";
 import Search from './components/search';
 import Navbar from './components/Navbar';
 import News from './components/News';
-import About from './components/About'
-
-
+import Cardlist from "./components/Cardlist";
+import Groupe from "./components/Groupe";
 
 
 
@@ -26,7 +25,8 @@ function App() {
         <Routes>
 
             <>
-            <Route path="/About" element={<About />} />
+      <Route path="/Groupe" element={<Groupe />}/>
+            <Route path="/CardList" element={<Cardlist />} />
             <Route path="/News" element={<News />} />
             <Route path="/Navbar" element={<Navbar/>} />
               <Route path="/" element={<Home />} />
