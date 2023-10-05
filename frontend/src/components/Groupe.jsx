@@ -3,11 +3,12 @@ import React from 'react'
 export default function (){
   return (
     <div>
-     <img src="c:\Users\Dell\Desktop\houssem.JPG"></img>
   <div class="card-body">
-    <br></br>
+    <br />
+    <br />
     <h5 class="card-title">GomyCode</h5>
-    <br></br>
+    <br />
+    <br />
     <p class="card-text">"Dear [GomyCode],
 
 I would like to express my deep gratitude and sincere thanks to you for the opportunity to study at your esteemed institution. It has been an unforgettable experience for me, and I would like to share some words that express my feelings.
@@ -18,11 +19,11 @@ I am grateful for the support I received from the professors, administration, an
 
 I look forward to using the knowledge and skills I have gained here to serve my community and achieve my goals. I will always hold the memories of the days I spent at this institution close to my heart, and I will strive to demonstrate the true benefits of this wonderful experience.
 
-Thank you once again for everything, and I wish your esteemed institution continued progress and prosperity in the future.
+
 
 With all my gratitude and respect,</p>
 <h5 class="card-title">Thank you Professor </h5>
-<p class="card-text"></p>Dear Professor [Professor's Name],
+<p class="card-text"></p>Dear Professor [shady belhj],
 
 I look forward to sharing a special thank you message to express my respect and appreciation for you. I am very grateful for your efforts and contributions in guiding and educating me during my time at the institute.
 
@@ -55,7 +56,7 @@ With heartfelt gratitude,
 
 [اسمك]</p>
 
-    <a href="http://localhost:3000/" class="btn btn-primary">Go somewhere</a>
+    <a href="/Photo" class="btn btn-primary">Go somewhere</a>
   </div>
   <div>
   </div>

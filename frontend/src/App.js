@@ -11,7 +11,7 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import Cardlist from "./components/Cardlist";
 import Groupe from "./components/Groupe";
-
+import Photo from "./components/Photo";
 
 
 
@@ -25,6 +25,7 @@ function App() {
         <Routes>
 
             <>
+       <Route path="/Photo" element={<Photo />} />
       <Route path="/Groupe" element={<Groupe />}/>
             <Route path="/CardList" element={<Cardlist />} />
             <Route path="/News" element={<News />} />
