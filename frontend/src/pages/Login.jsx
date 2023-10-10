@@ -47,6 +47,7 @@ const Login = () => {
           />
         </div>
         <div>
+          <br></br>
           <label htmlFor="password">password</label>
           <input
             type="password"
@@ -55,6 +56,7 @@ const Login = () => {
             onChange={(e) => setpassword(e.target.value)}
           />
         </div>
+        <br></br>
         <input type="submit" />
       </form>
       <Toaster/>
